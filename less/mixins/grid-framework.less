@@ -19,8 +19,20 @@
       // Prevent columns from collapsing when empty
       min-height: 1px;
       // Inner gutter via padding
-      padding-left:  (@grid-gutter-width / 2);
-      padding-right: (@grid-gutter-width / 2);
+      padding-left:  (@grid-gutter-width-xs / 2);
+      padding-right: (@grid-gutter-width-xs / 2);
+      @media (min-width: @screen-sm-min) {
+        padding-left:  (@grid-gutter-width-sm / 2);
+        padding-right: (@grid-gutter-width-sm / 2);
+      }
+      @media (min-width: @screen-md-min) {
+        padding-left:  (@grid-gutter-width-md / 2);
+        padding-right: (@grid-gutter-width-md / 2);
+      }
+      @media (min-width: @screen-lg-min) {
+        padding-left:  (@grid-gutter-width-lg / 2);
+        padding-right: (@grid-gutter-width-lg / 2);
+      }
     }
   }
   .col(1); // kickstart it
