@@ -15,12 +15,7 @@
   }
   .col(@index, @list) when (@index > @grid-columns) { // terminal
     @{list} {
-      position: relative;
-      // Prevent columns from collapsing when empty
-      min-height: 1px;
-      // Inner gutter via padding
-      padding-left:  (@grid-gutter-width-xs / 2);
-      padding-right: (@grid-gutter-width-xs / 2);
+      .make-column-base(@grid-gutter-width);
       @media (min-width: @screen-sm-min) {
         padding-left:  (@grid-gutter-width-sm / 2);
         padding-right: (@grid-gutter-width-sm / 2);
