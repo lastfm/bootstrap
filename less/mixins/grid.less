@@ -57,99 +57,99 @@
 }
 
 // Generate the small columns
-.make-sm-column(@columns; @gutter: @grid-gutter-width) {
+.make-sm-column(@columns; @gutter: @grid-gutter-width; @container-width: 100%) {
   .make-column-base(@gutter);
 
   @media (min-width: @screen-sm-min) {
-    .col-width(@columns, @container-sm - @grid-gutter-width-sm);
+    .col-width(@columns, @container-width);
 
     float: left;
     width: @col-width-return;
   }
 }
-.make-sm-column-offset(@columns) {
+.make-sm-column-offset(@columns; @container-width: 100%) {
   @media (min-width: @screen-sm-min) {
-    .col-width(@columns, @container-sm - @grid-gutter-width-sm);
+    .col-width(@columns, @container-width);
 
     margin-left: @col-width-return;
   }
 }
-.make-sm-column-push(@columns) {
+.make-sm-column-push(@columns; @container-width: 100%) {
   @media (min-width: @screen-sm-min) {
-    .col-width(@columns, @container-sm - @grid-gutter-width-sm);
+    .col-width(@columns, @container-width);
 
     left: @col-width-return;
   }
 }
-.make-sm-column-pull(@columns) {
+.make-sm-column-pull(@columns; @container-width: 100%) {
   @media (min-width: @screen-sm-min) {
-    .col-width(@columns, @container-sm - @grid-gutter-width-sm);
+    .col-width(@columns, @container-width);
 
     right: @col-width-return;
   }
 }
 
 // Generate the medium columns
-.make-md-column(@columns; @gutter: @grid-gutter-width) {
+.make-md-column(@columns; @gutter: @grid-gutter-width; @container-width: 100%) {
   .make-column-base(@gutter);
 
   @media (min-width: @screen-md-min) {
-    .col-width(@columns, @container-md - @grid-gutter-width-md);
+    .col-width(@columns, @container-width);
 
     float: left;
     width: @col-width-return;
   }
 }
-.make-md-column-offset(@columns) {
+.make-md-column-offset(@columns; @container-width: 100%) {
   @media (min-width: @screen-md-min) {
-    .col-width(@columns, @container-md - @grid-gutter-width-md);
+    .col-width(@columns, @container-width);
 
     margin-left: @col-width-return;
   }
 }
-.make-md-column-push(@columns) {
+.make-md-column-push(@columns; @container-width: 100%) {
   @media (min-width: @screen-md-min) {
-    .col-width(@columns, @container-md - @grid-gutter-width-md);
+    .col-width(@columns, @container-width);
 
     left: @col-width-return;
   }
 }
-.make-md-column-pull(@columns) {
+.make-md-column-pull(@columns; @container-width: 100%) {
   @media (min-width: @screen-md-min) {
-    .col-width(@columns, @container-md - @grid-gutter-width-md);
+    .col-width(@columns, @container-width);
 
     right: @col-width-return;
   }
 }
 
 // Generate the large columns
-.make-lg-column(@columns; @gutter: @grid-gutter-width) {
+.make-lg-column(@columns; @gutter: @grid-gutter-width; @container-width: 100%) {
   .make-column-base(@gutter);
 
   @media (min-width: @screen-lg-min) {
-    .col-width(@columns, @container-lg - @grid-gutter-width-lg);
+    .col-width(@columns, @container-width);
 
     float: left;
     width: @col-width-return;
   }
 }
-.make-lg-column-offset(@columns) {
+.make-lg-column-offset(@columns; @container-width: 100%) {
   @media (min-width: @screen-lg-min) {
-    .col-width(@columns, @container-lg - @grid-gutter-width-lg);
+    .col-width(@columns, @container-width);
 
     margin-left: @col-width-return;
   }
 }
-.make-lg-column-push(@columns) {
+.make-lg-column-push(@columns; @container-width: 100%) {
   @media (min-width: @screen-lg-min) {
-    .col-width(@columns, @container-lg - @grid-gutter-width-lg);
+    .col-width(@columns, @container-width);
 
     left: @col-width-return;
   }
 }
-.make-lg-column-pull(@columns) {
+.make-lg-column-pull(@columns; @container-width: 100%) {
   @media (min-width: @screen-lg-min) {
-    .col-width(@columns, @container-lg - @grid-gutter-width-lg);
+    .col-width(@columns, @container-width);
 
     right: @col-width-return;
   }
