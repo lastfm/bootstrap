@@ -117,7 +117,7 @@
   .make-column-base(@gutter);
 
   @media (min-width: @screen-sm-min) {
-    .col-width(@columns, @container-sm - @grid-gutter-width-sm);
+    .col-width(@columns, @container-sans-margin-sm);
 
     float: left;
     width: @col-width-return;
@@ -125,21 +125,21 @@
 }
 .make-sm-column-offset(@columns) {
   @media (min-width: @screen-sm-min) {
-    .col-width(@columns, @container-sm - @grid-gutter-width-sm);
+    .col-width(@columns, @container-sans-margin-sm);
 
     margin-left: @col-width-return;
   }
 }
 .make-sm-column-push(@columns) {
   @media (min-width: @screen-sm-min) {
-    .col-width(@columns, @container-sm - @grid-gutter-width-sm);
+    .col-width(@columns, @container-sans-margin-sm);
 
     left: @col-width-return;
   }
 }
 .make-sm-column-pull(@columns) {
   @media (min-width: @screen-sm-min) {
-    .col-width(@columns, @container-sm - @grid-gutter-width-sm);
+    .col-width(@columns, @container-sans-margin-sm);
 
     right: @col-width-return;
   }
@@ -168,7 +168,7 @@
   .make-column-base(@gutter);
 
   @media (min-width: @screen-md-min) {
-    .col-width(@columns, @container-md - @grid-gutter-width-md);
+    .col-width(@columns, @container-sans-margin-md);
 
     float: left;
     width: @col-width-return;
@@ -176,21 +176,21 @@
 }
 .make-md-column-offset(@columns) {
   @media (min-width: @screen-md-min) {
-    .col-width(@columns, @container-md - @grid-gutter-width-md);
+    .col-width(@columns, @container-sans-margin-md);
 
     margin-left: @col-width-return;
   }
 }
 .make-md-column-push(@columns) {
   @media (min-width: @screen-md-min) {
-    .col-width(@columns, @container-md - @grid-gutter-width-md);
+    .col-width(@columns, @container-sans-margin-md);
 
     left: @col-width-return;
   }
 }
 .make-md-column-pull(@columns) {
   @media (min-width: @screen-md-min) {
-    .col-width(@columns, @container-md - @grid-gutter-width-md);
+    .col-width(@columns, @container-sans-margin-md);
 
     right: @col-width-return;
   }
@@ -219,7 +219,7 @@
   .make-column-base(@gutter);
 
   @media (min-width: @screen-lg-min) {
-    .col-width(@columns, @container-lg - @grid-gutter-width-lg);
+    .col-width(@columns, @container-sans-margin-lg);
 
     float: left;
     width: @col-width-return;
@@ -227,21 +227,21 @@
 }
 .make-lg-column-offset(@columns) {
   @media (min-width: @screen-lg-min) {
-    .col-width(@columns, @container-lg - @grid-gutter-width-lg);
+    .col-width(@columns, @container-sans-margin-lg);
 
     margin-left: @col-width-return;
   }
 }
 .make-lg-column-push(@columns) {
   @media (min-width: @screen-lg-min) {
-    .col-width(@columns, @container-lg - @grid-gutter-width-lg);
+    .col-width(@columns, @container-sans-margin-lg);
 
     left: @col-width-return;
   }
 }
 .make-lg-column-pull(@columns) {
   @media (min-width: @screen-lg-min) {
-    .col-width(@columns, @container-lg - @grid-gutter-width-lg);
+    .col-width(@columns, @container-sans-margin-lg);
 
     right: @col-width-return;
   }
